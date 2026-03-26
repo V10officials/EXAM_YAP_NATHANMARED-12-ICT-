@@ -68,9 +68,10 @@ $anime_desc = [
             </a>
             <div class="navbar-actions">
                 <span style="color:#aaa;font-size:.9rem;margin-right:8px;">
-                    Hi, <?= htmlspecialchars($_SESSION['registered_name']?? 'User') ?>
+                    Welcome, <?= htmlspecialchars($_SESSION['registered_name'] ?? 'User') ?>
                 </span>
-
+                
+                <!-- Logout button -->
                 <a href="logout.php" class="btn-outline btn-logout">Logout</a>
             </div>
         </nav>
@@ -79,6 +80,7 @@ $anime_desc = [
         <main class="homepage-main">
             <h2>Latest Episodes</h2>
 
+            <!-- For loop -->
             <div class="anime-grid">
                 <?php for ($i = 0; $i < count($anime_titles); $i++): ?>
                     <div class="anime-card">
@@ -102,9 +104,8 @@ $anime_desc = [
         <!-- Footer -->
         <footer>
             <div>Copyright &copy; 2026. All rights reserved.</div>
-            <div>Designed with <span class="heart">&#9829;</span> | Computer Programming - D</div>
+            <div>Programmer - Nathan <span class="yappers">&#9829;</span> | Computer Programming - D</div>
         </footer>
     </div>
 </body>
-
 </html>
