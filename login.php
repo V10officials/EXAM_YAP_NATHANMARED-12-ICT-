@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email'] ?? '');
     $password = trim($_POST['password'] ?? '');
 
-    // Simple check against registered session data (demo purposes)
+    
     if (isset($_SESSION['registered_user']) && isset($_SESSION['registered_pass']) &&
         $email === $_SESSION['registered_user'] && $password === $_SESSION['registered_pass']) {
         $_SESSION['logged_in'] = true;
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Footer -->
         <footer>
             <div>Copyright &copy; 2026. All rights reserved.</div>
-            <div>Designed with <span class="heart">&#9829;</span> | Computer Programming - D</div>
+            <div>Programmer - Nathan <span class="yappers">&#9829;</span> | Computer Programming - D</div>
         </footer>
     </div>
 </body>
