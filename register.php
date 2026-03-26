@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Footer -->
         <footer>
             <div>Copyright &copy; 2026. All rights reserved.</div>
-            <div>Designed with <span class="heart">&#9829;</span> | Computer Programming - D</div>
+            <div>Programmer - Nathan <span class="yappers">&#9829;</span> | Computer Programming - D</div>
         </footer>
 
     </div>
