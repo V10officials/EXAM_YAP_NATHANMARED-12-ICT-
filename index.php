@@ -57,8 +57,6 @@ session_start();
         </span>
       </a>
 
-
-
       <div class="navbar-actions">
         <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']): ?>
           <a href="homepage.php" class="btn-outline">Home</a>
@@ -73,26 +71,17 @@ session_start();
     <!-- Hero -->
     <div class="hero-content">
       <h1>DIVINE HUB</h1>
-      <p>Your go-to destination for the latest anime episodes. Stream hundreds of titles, updated daily.</p>
+      <p>Divine Anime - More Latest Episodes: Just Sign up</p>
       <div class="hero-buttons">
         <a href="register.php" class="btn-hero-outline">Get Started</a>
         <a href="login.php" class="btn-hero-primary">Create An Account</a>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
+    
     <!-- Footer -->
     <footer>
       <div>Copyright &copy; 2026. All rights reserved.</div>
-      <div>Designed with <span class="heart">&#9829;</span> | Computer Programming - D</div>
+      <div>Programmer - Nathan <span class="yappers">&#9829;</span> | Computer Programming - D</div>
     </footer>
 
   </div>
