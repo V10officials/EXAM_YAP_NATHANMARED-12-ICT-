@@ -30,7 +30,10 @@
   --overlay: rgba(5, 5, 10, 0.65);
   --shadow-sm: 0 4px 24px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
-  --shadow-accent: 0 8px 32px rgba(255, 107, 53, 0.2);
+--shadow-accent: 0 8px 32px rgba(255, 107, 53, 0.2);
+  --light-red: #ff6666;
+  --light-red-dark: #ff5252;
+  --light-red-glow: rgba(255, 102, 102, 0.35);
   --radius-sm: 10px;
   --radius-md: 16px;
   --transition: 0.22s ease;
@@ -362,7 +365,7 @@ footer::before {
   opacity: 0.5;
 }
 
-footer .heart {
+footer .yappers {
   color: var(--accent);
 }
 
@@ -394,7 +397,7 @@ footer .heart {
   font-size: clamp(3rem, 7vw, 5.5rem);
   font-weight: 400;
   color: #fff;
-  text-shadow: 0 0 60px rgba(255, 107, 53, 0.3), 0 2px 24px rgba(0,0,0,0.8);
+  text-shadow: 0 0 60px rgba(187, 4, 4, 0.3), 0 2px 24px rgba(0,0,0,0.8);
   margin-bottom: 20px;
   letter-spacing: 4px;
   line-height: 1;
@@ -418,7 +421,7 @@ footer .heart {
 }
 
 .btn-hero-primary {
-  background: var(--accent);
+  background: var(--light-red);
   color: #fff;
   padding: 13px 38px;
   border-radius: var(--radius-sm);
@@ -428,12 +431,12 @@ footer .heart {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: background var(--transition), box-shadow var(--transition), transform 0.1s;
-  box-shadow: 0 6px 24px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
 }
 
 .btn-hero-primary:hover {
-  background: var(--accent-dark);
-  box-shadow: 0 8px 32px rgba(255, 107, 53, 0.55);
+  background: var(--light-red-dark);
+  box-shadow: 0 8px 32px var(--light-red-glow);
   transform: translateY(-2px);
 }
 
@@ -465,7 +468,6 @@ footer .heart {
 
 .homepage-bg {
   min-height: 100vh;
-  background-image: url('https://i.imgur.com/3v2VKUE.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
